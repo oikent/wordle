@@ -1,60 +1,56 @@
-*,*::before,*::after{
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: black;
     color: white;
-
 }
 
-.board{
+.board {
     display: grid;
     place-items: center;
-    background-color: rgb(17, 17, 17);
     gap: 0.5rem;
     padding-top: 4rem;
-    
-
 }
-h1{
+h1 {
     padding-bottom: 4rem;
     font-size: 5rem;
     letter-spacing: 0.4rem;
-    font-weight:900;
-
+    font-weight: 900;
 }
-.word{
+.word {
     display: flex;
     gap: 0.5rem;
 }
-.cell{
+.cell {
     color: white;
     background-color: rgb(17, 17, 17);
-    font-size: 4rem;
-    font-weight:600;
+    font-size: 3rem;
+    font-weight: 600;
     text-align: center;
-    height: 5rem;
+    max-height: 4rem;
     border: 2px solid rgb(66, 66, 66);
-    width: 5rem;
+    max-width: 4rem;
     appearance: none;
     caret-color: transparent;
-    cursor:default;
-    
-
+    cursor: default;
+    /* pointer-events: none; */
 }
-.cell:focus-within{
-    outline: none;
+.cell:focus-within {
+    /* outline: none; */
 }
 
-.present{
+.present {
     background-color: rgb(165, 156, 34);
 }
-.correct{
+.correct {
     background-color: rgb(11, 161, 11);
 }
-.incorrect{
+.incorrect {
     background-color: rgb(61, 61, 61);
 }
