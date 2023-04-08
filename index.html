@@ -9,98 +9,164 @@
     <title>Wordle</title>
 </head>
 <body>
-    
     <div class="board">
         <h1>Wordle</h1>
-        <div class="attempt-one word">
-            <input maxlength="1" class="attempt-one-cell cell first">
-            </input>
-            <input maxlength="1" class="attempt-one-cell cell second">
-            </input>
-            <input maxlength="1" class="attempt-one-cell cell third">
-                
-            </input>
-            <input maxlength="1" class="attempt-one-cell cell fourth">
-                
-            </input>
-            <input maxlength="1" class="attempt-one-cell cell fi">
-                
-            </input>
+        <div class="help">
+            <h2>How To Play</h2>
+            <div class="ex-box close">X</div>
+            <h3>Guess the Wordle in 6 tries.</h3>
+            <ul><li>Each guess must be a valid 5-letter word.</li>
+            <li>The color of the tiles will change to show how close your guess was to the word.</li></ul>
+            <h3>Examples</h3>
+            <div class="ex">
+                <div class="ex-box correct">S</div>
+                <div class="ex-box">T</div>
+                <div class="ex-box">O</div>
+                <div class="ex-box">R</div>
+                <div class="ex-box">M</div>
+            </div>
+            <p><span>S</span> is in the word and in the correct spot.</p>
+            <div class="ex">
+                <div class="ex-box">W</div>
+                <div class="ex-box present">H</div>
+                <div class="ex-box">E</div>
+                <div class="ex-box">A</div>
+                <div class="ex-box">T</div>
+            </div>
+            <p><span>H</span> is in the word but in the wrong spot.</p>
+        <div class="ex">
+            <div class="ex-box">O</div>
+            <div class="ex-box">N</div>
+            <div class="ex-box incorrect">I</div>
+            <div class="ex-box">O</div>
+            <div class="ex-box">N</div>
         </div>
-        <div class="attempt-two word">
-            <input maxlength="1" class="cell">
-            </input>
-            <input maxlength="1" class="cell">
-            </input>
-            <input maxlength="1" class="cell">
-                
-            </input>
-            <input maxlength="1" class="cell">
-                
-            </input>
-            <input maxlength="1" class="cell">
-                
-            </input>
+        <p><span>I</span> is not in the word in any spot.</p>
         </div>
-        <div class="attempt-three word">
-            <input maxlength="1" class="cell">
-        </input>
-        <input maxlength="1" class="cell">
-        </input>
-        <input maxlength="1" class="cell">
-            
-        </input>
-        <input maxlength="1" class="cell">
-            
-        </input>
-        <input maxlength="1" class="cell">
-            
-        </input>
+        
+        <div class="container">
+            <input maxlength="1" class="cell completed" tabindex="-1">
+            </input>
+            <input maxlength="1" class=" cell completed" tabindex="-1">
+            </input>
+            <input maxlength="1" class=" cell completed" tabindex="-1">
+                
+            </input>
+            <input maxlength="1" class=" cell completed" tabindex="-1">
+                
+            </input>
+            <input maxlength="1" class=" cell completed" tabindex="-1">
+                
+            </input>
+      
+            <input maxlength="1" class="cell completed" tabindex="-1">
+            </input>
+            <input maxlength="1" class="cell completed" tabindex="-1">
+            </input>
+            <input maxlength="1" class="cell completed" tabindex="-1">
+                
+            </input>
+            <input maxlength="1" class="cell completed" tabindex="-1">
+                
+            </input>
+            <input maxlength="1" class="cell completed" tabindex="-1">
+                
+            </input>
+     
+            <input maxlength="1" class="cell completed" tabindex="-1">
+            </input>
+            <input maxlength="1" class="cell completed" tabindex="-1">
+            </input>
+            <input maxlength="1" class="cell completed" tabindex="-1">
+                
+            </input>
+            <input maxlength="1" class="cell completed" tabindex="-1">
+                
+            </input>
+            <input maxlength="1" class="cell completed" tabindex="-1">
+                
+            </input>
+      
+            <input maxlength="1" class="cell completed" tabindex="-1">
+            </input>
+            <input maxlength="1" class="cell completed" tabindex="-1">
+            </input>
+            <input maxlength="1" class="cell completed" tabindex="-1">
+                
+            </input>
+            <input maxlength="1" class="cell completed" tabindex="-1">
+                
+            </input>
+            <input maxlength="1" class="cell completed" tabindex="-1">
+                
+            </input>
+       
+            <input maxlength="1" class="cell completed" tabindex="-1">
+            </input>
+            <input maxlength="1" class="cell completed" tabindex="-1">
+            </input>
+            <input maxlength="1" class="cell completed" tabindex="-1">
+                
+            </input>
+            <input maxlength="1" class="cell completed" tabindex="-1">
+                
+            </input>
+            <input maxlength="1" class="cell completed" tabindex="-1">
+                
+            </input>
+      
+            <input maxlength="1" class="cell completed" tabindex="-1">
+            </input>
+            <input maxlength="1" class="cell completed" tabindex="-1">
+            </input>
+            <input maxlength="1" class="cell completed" tabindex="-1">
+                
+            </input>
+            <input maxlength="1" class="cell completed" tabindex="-1">
+                
+            </input>
+            <input maxlength="1" class="cell completed" tabindex="-1">
+                
+            </input>
+      
         </div>
-        <div class="attempt-four word">
-            <input maxlength="1" class="cell">
-            </input>
-            <input maxlength="1" class="cell">
-            </input>
-            <input maxlength="1" class="cell">
+        <div class="keyboard">
+            <div class="top row">
+                <div class="cell keys">Q</div>
+                <div class="cell keys">W</div>
+                <div class="cell keys">E</div>
+                <div class="cell keys">R</div>
+                <div class="cell keys">T</div>
+                <div class="cell keys">Y</div>
+                <div class="cell keys">U</div>
+                <div class="cell keys">I</div>
+                <div class="cell keys">O</div>
+                <div class="cell keys">P</div>
+            </div>
+            <div class="middle row">
+                <div class="cell keys">A</div>
+                <div class="cell keys">S</div>
+                <div class="cell keys">D</div>
+                <div class="cell keys">F</div>
+                <div class="cell keys">G</div>
+                <div class="cell keys">H</div>
+                <div class="cell keys">J</div>
+                <div class="cell keys">K</div>
+                <div class="cell keys">L</div>
                 
-            </input>
-            <input maxlength="1" class="cell">
-                
-            </input>
-            <input maxlength="1" class="cell">
-                
-            </input>
-        </div>
-        <div class="attempt-five word">
-            <input maxlength="1" class="cell">
-            </input>
-            <input maxlength="1" class="cell">
-            </input>
-            <input maxlength="1" class="cell">
-                
-            </input>
-            <input maxlength="1" class="cell">
-                
-            </input>
-            <input maxlength="1" class="cell">
-                
-            </input>
-        </div>
-        <div class="attempt-six word">
-                <input maxlength="1" class="cell">
-            </input>
-            <input maxlength="1" class="cell">
-            </input>
-            <input maxlength="1" class="cell">
-                
-            </input>
-            <input maxlength="1" class="cell">
-                
-            </input>
-            <input maxlength="1" class="cell">
-                
-            </input>
+            </div>
+            <div class="bottom row">
+                <div class="cell keys">ENT</div>
+                <div class="cell keys">Z</div>
+                <div class="cell keys">X</div>
+                <div class="cell keys">C</div>
+                <div class="cell keys">V</div>
+                <div class="cell keys">B</div>
+                <div class="cell keys">N</div>
+                <div class="cell keys">M</div>
+                <div class="cell keys"><=</div>
+            </div>
+
         </div>
     </div>
 </body>

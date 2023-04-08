@@ -14,43 +14,127 @@ body {
 .board {
     display: grid;
     place-items: center;
-    gap: 0.5rem;
     padding-top: 4rem;
+    position: relative;
+    max-width: 100%;
+}
+/* img {
+    width: 100%;
+    max-width: 1000px;
+} */
+
+h2,
+h3,
+p {
+    padding: 1rem 0;
+}
+h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+ul {
+    padding-left: 2rem;
 }
 h1 {
-    padding-bottom: 4rem;
-    font-size: 5rem;
+    padding-bottom: 3rem;
+    font-size: 3rem;
     letter-spacing: 0.4rem;
     font-weight: 900;
 }
-.word {
+
+.help {
+    position: relative;
+    font-size: clamp(1rem, 2.5vw, 2rem);
+}
+.close {
+    font-family: monospace;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    background-color: red;
+}
+
+.close:hover {
+    background-color: black;
+}
+
+.ex {
     display: flex;
+}
+.ex-box {
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 4rem;
+    height: 4rem;
+    border: 2px solid rgb(66, 66, 66);
+}
+
+span {
+    font-weight: 600;
+}
+.container {
+    display: none;
+    grid-template-columns: repeat(5, 1fr);
     gap: 0.5rem;
 }
+
 .cell {
     color: white;
     background-color: rgb(17, 17, 17);
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 600;
     text-align: center;
-    max-height: 4rem;
     border: 2px solid rgb(66, 66, 66);
-    max-width: 4rem;
+    height: 4rem;
+    width: 4rem;
     appearance: none;
     caret-color: transparent;
     cursor: default;
-    /* pointer-events: none; */
+    pointer-events: none;
 }
 .cell:focus-within {
-    /* outline: none; */
+    outline: none;
+}
+
+.keyboard {
+    display: none;
+    gap: 0.5rem;
+}
+.row {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.row > div {
+    height: 3rem;
+    width: 3rem;
+}
+.correct {
+    background-color: rgb(11, 161, 11);
+    animation: flip 500ms ease-in;
 }
 
 .present {
     background-color: rgb(165, 156, 34);
+    animation: flip 500ms ease-in;
 }
-.correct {
-    background-color: rgb(11, 161, 11);
-}
+
 .incorrect {
     background-color: rgb(61, 61, 61);
+    animation: flip 500ms ease-in;
+}
+
+@keyframes flip {
+    0% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(0);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
 }
